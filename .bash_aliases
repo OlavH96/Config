@@ -17,3 +17,5 @@ alias gc='git commit'
 alias gg='git log --graph'
 alias gga='git log --graph --all'
 alias ggao='git log --graph --all --oneline'
+
+videores() { printf "$1 " ; ffmpeg -i $1 2>&1 | grep -oP 'Stream .*, \K[0-9]+x[0-9]+'; }
