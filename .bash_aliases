@@ -24,3 +24,5 @@ alias gp='git push'
 alias gitsetvim='git config --global core.editor "vim"'
 
 videores() { printf "$1 " ; ffmpeg -i $1 2>&1 | grep -oP 'Stream .*, \K[0-9]+x[0-9]+'; }
+# Trace program file opens to log file. Eg 'tracefiles discord'
+alias tracefiles='strace -e file -fF -o ./.trace.log'
