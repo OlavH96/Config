@@ -6,10 +6,10 @@
 
 2. Find backup superblocks
 
-    - sudo mke2fs -n /dev/<device>
+    - sudo mke2fs -n /dev/device
 
 3. Run disk repair with new superblocks
 
-    - sudo fsck -b <backup> /dev/<device>
+    - sudo fsck -b backup-number /dev/device
 
 4. Pray
