@@ -4,7 +4,7 @@
 
     - fdisk -l
 
-2. Find backup superblocks
+2. Find backup superblocks (**remember the -n unless you wanna wipe your drive**)
 
     - sudo mke2fs -n /dev/device
 
