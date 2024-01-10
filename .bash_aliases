@@ -1,5 +1,4 @@
 alias wtr='curl wttr.in'
-alias no='grep -viP'
 
 # Pipe into this command to use, cant use directly
 alias upload='nc termbin.com 9999'
@@ -45,6 +44,11 @@ function gum() {
 
 
 # END GIT
+
+# dotnet
+alias csx='dotnet-script'
+# end dotnet
+
 
 videores() { printf "$1 " ; ffmpeg -i $1 2>&1 | grep -oP 'Stream .*, \K[0-9]+x[0-9]+'; }
 # Trace program file opens to log file. Eg 'tracefiles discord'
