@@ -32,6 +32,7 @@ alias ggo='git log --graph --oneline'
 alias gchm='git checkout master'
 alias gchb='git checkout -b'
 alias gp='git push'
+alias g-='git checkout -'
 
 alias gitsetvim='git config --global core.editor "vim"'
 
